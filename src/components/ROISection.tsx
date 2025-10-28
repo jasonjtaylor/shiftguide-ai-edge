@@ -30,12 +30,13 @@ const ROISection = () => {
   ];
 
   return (
-    <section id="roi" className="py-20 md:py-32 bg-card relative overflow-hidden">
+    <section id="roi" className="py-20 md:py-32 bg-gradient-to-b from-card via-background to-card relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-1/2 h-full bg-gradient-to-r from-secondary/5 to-transparent"></div>
 
       <div className="container relative mx-auto px-6">
-        <div className="text-center mb-16 space-y-4">
+        <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-heading font-bold">
             From{" "}
             <span className="text-destructive line-through decoration-4">
@@ -49,19 +50,19 @@ const ROISection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {metrics.map((metric, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+              className="group p-8 rounded-2xl bg-gradient-to-br from-background via-background to-card border-2 border-border hover:border-secondary/50 transition-all hover:shadow-2xl hover:shadow-secondary/20 transform hover:-translate-y-1"
             >
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <metric.icon className="w-6 h-6 text-primary" />
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-secondary/20 via-primary/20 to-accent/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                <metric.icon className="w-7 h-7 text-secondary" />
               </div>
-              <div className="text-4xl font-heading font-bold text-secondary mb-2">
+              <div className="text-5xl font-heading font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-2">
                 {metric.value}
               </div>
-              <div className="text-lg font-semibold mb-1">{metric.label}</div>
+              <div className="text-lg font-semibold mb-2 text-foreground">{metric.label}</div>
               <div className="text-sm text-muted-foreground">
                 {metric.description}
               </div>
