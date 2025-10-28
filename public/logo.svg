@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="60" fill="#1a1a1a" rx="8"/>
+  
+  <!-- Logo Icon -->
+  <rect x="15" y="15" width="30" height="30" fill="url(#gradient)" rx="6"/>
+  <text x="30" y="35" font-family="Inter, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="white">SG</text>
+  
+  <!-- Company Name -->
+  <text x="60" y="25" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="white">ShiftGuide</text>
+  <text x="60" y="42" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#9ca3af">AI Co-Pilot</text>
+</svg>

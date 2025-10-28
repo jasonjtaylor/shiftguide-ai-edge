@@ -1,0 +1,16 @@
+{
+  "name": "ShiftGuide - AI Co-Pilot for Frontline Workers",
+  "short_name": "ShiftGuide",
+  "description": "Voice-first guidance for frontline teams—faster fixes, fewer escalations, and automatic documentation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
