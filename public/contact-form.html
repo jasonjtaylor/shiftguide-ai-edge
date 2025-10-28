@@ -18,7 +18,7 @@
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    action="/thank-you/"
+    action="/thank-you"
     class="netlify-form"
   >
     <input type="hidden" name="form-name" value="contact" />
@@ -34,21 +34,5 @@
     <button type="submit">Send</button>
   </form>
 
-  <script>
-    const form = document.querySelector('form[name="contact"]');
-    if (form) {
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const data = new FormData(form);
-        // Netlify expects urlencoded
-        await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(data).toString()
-        });
-        window.location.href = form.action || '/thank-you';
-      });
-    }
-  </script>
 </body>
 </html>
