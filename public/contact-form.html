@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Form — ShiftGuide</title>
+  <style>
+    /* Hidden form for Netlify detection */
+    .netlify-form {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hidden form that Netlify will detect at build time -->
+  <form
+    name="pilot"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/thank-you"
+    class="netlify-form"
+  >
+    <input type="hidden" name="form-name" value="pilot" />
+    <p style="display:none;">
+      <label>Don't fill this out: <input name="bot-field" /></label>
+    </p>
+
+    <label>Full name <input type="text" name="name" required /></label>
+    <label>Work email <input type="email" name="email" required /></label>
+    <label>Phone number <input type="tel" name="phone" required /></label>
+    <label>Company <input type="text" name="company" required /></label>
+    <label>Team size 
+      <select name="size" required>
+        <option value="">Select…</option>
+        <option value="1-50">1–50</option>
+        <option value="51-150">51–150</option>
+        <option value="151-500">151–500</option>
+        <option value="500+">500+</option>
+      </select>
+    </label>
+    <label>What problems are you trying to solve? <textarea name="goals" rows="4"></textarea></label>
+
+    <button type="submit">Start 90-day pilot</button>
+  </form>
+</body>
+</html>
