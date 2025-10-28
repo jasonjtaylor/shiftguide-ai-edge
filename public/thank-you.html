@@ -2,35 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Thanks — ShiftGuide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#0b1220; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --brand:#646cff; }
-    html,body{height:100%} body{
-      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background:var(--bg); color:var(--text); display:grid; place-items:center; padding:24px;
-    }
-    .wrap{max-width:760px; text-align:center;}
-    h1{font-size:clamp(28px,6vw,44px); margin:0 0 12px; font-weight:800; letter-spacing:.2px}
-    p{color:var(--muted); font-size:18px; line-height:1.6}
-    .card{background:var(--card); border:1px solid #1f2a44; border-radius:14px; padding:22px; margin-top:28px}
-    a.btn{display:inline-flex; gap:10px; align-items:center; margin-top:24px; padding:12px 18px;
-      background:var(--brand); color:#fff; border-radius:12px; text-decoration:none; font-weight:700}
-    a.link{color:#a5b4fc; text-decoration:none}
+    body{margin:0;background:#0b1220;color:#e7e9f1;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial}
+    .wrap{max-width:900px;margin:8rem auto;padding:0 1.25rem;text-align:center}
+    h1{font-size:clamp(2rem,3vw,3rem);line-height:1.1;margin:0 0 1rem}
+    p{opacity:.85;font-size:1.125rem}
+    .panel{background:#0f172a;border:1px solid #1f2937;border-radius:14px;padding:24px;margin-top:28px;display:inline-block}
+    a.btn{display:inline-block;margin-top:28px;padding:12px 18px;border-radius:10px;text-decoration:none;background:#3b82f6;color:#fff}
+    a.btn:hover{filter:brightness(1.1)}
   </style>
 </head>
 <body>
   <main class="wrap">
     <h1>Thanks! We got your message.</h1>
     <p>We'll reach you at the contact information you provided within one business day.</p>
-    <div class="card">
-      <p>You can also reach us directly at:<br>
-        <a class="link" href="mailto:sleepwalkersoftware@gmail.com">sleepwalkersoftware@gmail.com</a>
-        &nbsp;or&nbsp;<a class="link" href="tel:+15069990074">1-506-999-0074</a>
-      </p>
+    <div class="panel">
+      <p>You can also reach us directly at:</p>
+      <p><strong>sleepwalkersoftware@gmail.com</strong> &nbsp;·&nbsp; <strong>1-506-999-0074</strong></p>
     </div>
     <a class="btn" href="/">← Back to home</a>
   </main>
