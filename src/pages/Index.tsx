@@ -1,12 +1,12 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import ROISection from "@/components/ROISection";
+import StatsSection from "@/components/StatsSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import ROIMetricsSection from "@/components/ROIMetricsSection";
+import IndustriesSection from "@/components/IndustriesSection";
+import TrustSecuritySection from "@/components/TrustSecuritySection";
+import PilotFormSection from "@/components/PilotFormSection";
 import DemoSection from "@/components/DemoSection";
-import UseCasesSection from "@/components/UseCasesSection";
-import PilotSection from "@/components/PilotSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,13 +14,13 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground dark">
       <Navigation />
       <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <ROISection />
+      <StatsSection />
+      <HowItWorksSection />
+      <ROIMetricsSection />
+      <IndustriesSection />
+      <TrustSecuritySection />
+      <PilotFormSection />
       <DemoSection />
-      <UseCasesSection />
-      <PilotSection />
-      <TestimonialsSection />
       <Footer />
     </div>
   );

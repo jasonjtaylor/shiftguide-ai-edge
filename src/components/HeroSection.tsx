@@ -50,16 +50,14 @@ const HeroSection = () => {
       <div className="container relative z-20 mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight">
-            AI Co-Pilot for the{" "}
+            Built by operators.{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Modern Factory Floor
+              Powered by AI.
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            ShiftGuide helps frontline workers solve problems{" "}
-            <span className="text-secondary font-semibold">5x faster</span> with
-            real-time AI guidance, safety checks, and instant incident logging.
+            ShiftGuide is the voice-first co-pilot for frontline teams—guiding troubleshooting, safety, and documentation in real time.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -69,14 +67,14 @@ const HeroSection = () => {
               onClick={() => scrollToSection("demo")}
               className="text-lg px-8 py-6 border-primary/50 hover:border-primary hover:bg-primary/10 transition-all"
             >
-              See Demo
+              See 30-sec demo
             </Button>
             <Button
               size="lg"
               onClick={() => scrollToSection("pilot")}
               className="bg-gradient-to-r from-secondary via-secondary to-secondary/90 text-white hover:opacity-90 transition-opacity text-lg px-8 py-6 glow-effect-orange shadow-lg shadow-secondary/30"
             >
-              Join Pilot Program →
+              Start a 90-day pilot
             </Button>
           </div>
 

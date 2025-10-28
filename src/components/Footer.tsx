@@ -79,18 +79,35 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Contact */}
           <div className="space-y-3">
-            <h4 className="font-heading font-semibold">Connect</h4>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Linkedin size={20} />
-              <span>LinkedIn</span>
-            </a>
+            <h4 className="font-heading font-semibold">Contact</h4>
+            <div className="space-y-2">
+              <a 
+                href="mailto:sleepwalkersoftware@gmail.com" 
+                className="block text-sm text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 rounded"
+              >
+                sleepwalkersoftware@gmail.com
+              </a>
+              <a 
+                href="tel:+15069990074" 
+                className="block text-sm text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 rounded"
+              >
+                1-506-999-0074
+              </a>
+              <p className="text-sm text-muted-foreground">
+                Fredericton, NB
+              </p>
+              <a
+                href="https://linkedin.com/company/sleepwalker-software"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 rounded"
+              >
+                <Linkedin size={20} />
+                <span>LinkedIn</span>
+              </a>
+            </div>
           </div>
         </div>
 
