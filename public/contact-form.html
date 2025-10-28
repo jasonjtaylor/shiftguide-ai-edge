@@ -43,5 +43,22 @@
 
     <button type="submit">Start 90-day pilot</button>
   </form>
+
+  <script>
+    const form = document.querySelector('form[name="pilot"]');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        // Netlify expects urlencoded
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(data).toString()
+        });
+        window.location.href = form.getAttribute('action') || '/thank-you';
+      });
+    }
+  </script>
 </body>
 </html>
