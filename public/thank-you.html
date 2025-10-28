@@ -2,80 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thanks — ShiftGuide</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0a0a0a;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    :root { --bg:#0b1220; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --brand:#646cff; }
+    html,body{height:100%} body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg); color:var(--text); display:grid; place-items:center; padding:24px;
     }
-    .container {
-      max-width: 600px;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    p {
-      font-size: 1.25rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      color: #94a3b8;
-    }
-    a {
-      color: #3b82f6;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border: 2px solid #3b82f6;
-      border-radius: 0.5rem;
-      display: inline-block;
-      transition: all 0.2s;
-    }
-    a:hover {
-      background: #3b82f6;
-      color: white;
-    }
-    .contact-info {
-      background: rgba(59, 130, 246, 0.1);
-      padding: 1.5rem;
-      border-radius: 0.75rem;
-      margin: 2rem 0;
-      border: 1px solid rgba(59, 130, 246, 0.2);
-    }
-    .contact-info strong {
-      color: #3b82f6;
-    }
+    .wrap{max-width:760px; text-align:center;}
+    h1{font-size:clamp(28px,6vw,44px); margin:0 0 12px; font-weight:800; letter-spacing:.2px}
+    p{color:var(--muted); font-size:18px; line-height:1.6}
+    .card{background:var(--card); border:1px solid #1f2a44; border-radius:14px; padding:22px; margin-top:28px}
+    a.btn{display:inline-flex; gap:10px; align-items:center; margin-top:24px; padding:12px 18px;
+      background:var(--brand); color:#fff; border-radius:12px; text-decoration:none; font-weight:700}
+    a.link{color:#a5b4fc; text-decoration:none}
   </style>
 </head>
 <body>
-  <main class="container">
+  <main class="wrap">
     <h1>Thanks! We got your message.</h1>
     <p>We'll reach you at the contact information you provided within one business day.</p>
-    
-    <div class="contact-info">
-      <p>You can also reach us directly at:</p>
-      <p><strong>sleepwalkersoftware@gmail.com</strong> or <strong>1-506-999-0074</strong></p>
+    <div class="card">
+      <p>You can also reach us directly at:<br>
+        <a class="link" href="mailto:sleepwalkersoftware@gmail.com">sleepwalkersoftware@gmail.com</a>
+        &nbsp;or&nbsp;<a class="link" href="tel:+15069990074">1-506-999-0074</a>
+      </p>
     </div>
-    
-    <p><a href="/">← Back to home</a></p>
+    <a class="btn" href="/">← Back to home</a>
   </main>
 </body>
 </html>
